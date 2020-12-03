@@ -1,5 +1,7 @@
 # Docker image for [Telegram Bot API](https://github.com/tdlib/telegram-bot-api)
 
+[DockerHub](https://hub.docker.com/r/darvesh/telegram-bot-api)
+
 # Usage
 You can pass whatever arguments you normally pass to telegram-bot-api with docker run command after the image name.
 
@@ -15,4 +17,6 @@ By default the Telegram Bot API server is launched on the port 8081, which can b
 * [latest, alpine](https://github.com/darvesh/telegram-bot-api-docker/blob/master/alpine/Dockerfile)
 * [debin-buster-slim](https://github.com/darvesh/telegram-bot-api-docker/blob/master/debian/Dockerfile)
 
-## Note: This is an unofficial image of telegram-bot-api
+## Note: 
+* This is an unofficial image of telegram-bot-api
+* Only supports linux 
