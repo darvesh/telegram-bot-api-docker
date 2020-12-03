@@ -2,6 +2,15 @@
 
 [DockerHub](https://hub.docker.com/r/darvesh/telegram-bot-api)
 
+<p align="left">
+	<!-- Github Issues -->
+  <a>
+    <img src="https://img.shields.io/github/issues/darvesh/telegram-bot-api-docker?style=flat-square" alt=Github Issues"/>
+  </a>
+   <img src="https://github.com/darvesh/telegram-bot-api-docker/workflows/Build%20and%20push%20telegram-bot-api%20image%20to%20DockerHub/badge.svg" alt="build status"/>
+</p>
+
+
 # Usage
 You can pass whatever arguments you normally pass to telegram-bot-api with docker run command after the image name.
 
