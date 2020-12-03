@@ -1,0 +1,40 @@
+name: Build and push telegram-bot-api image to DockerHub
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  alpine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.2
+        name: Check out code
+
+      - name: Build & push alpine
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: darvesh/telegram-bot-api
+          registry: docker.io
+          directory: ./alpine
+          dockerfile: ./alpine/Dockerfile
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          tags: alpine, latest
+  debian:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.2
+        name: Check out code
+
+      - name: Build & push debian-buster-slim
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: darvesh/telegram-bot-api
+          registry: docker.io
+          directory: ./debian
+          dockerfile: ./debian/Dockerfile
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          tags: debian-buster-slim

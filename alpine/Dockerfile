@@ -12,7 +12,7 @@ RUN rm -rf build
 RUN mkdir build
 WORKDIR /app/telegram-bot-api/build
 RUN cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr/local ..
-RUN cmake --build . --target install
+RUN cmake --build . --target install -j 5
 
 
 ENTRYPOINT ["/usr/local/bin/telegram-bot-api"]
