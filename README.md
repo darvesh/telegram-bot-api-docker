@@ -14,3 +14,5 @@ By default the Telegram Bot API server is launched on the port 8081, which can b
 ## Supported tags
 * [latest, alpine](https://github.com/darvesh/telegram-bot-api-docker/blob/master/alpine/Dockerfile)
 * [debin-buster-slim](https://github.com/darvesh/telegram-bot-api-docker/blob/master/debian/Dockerfile)
+
+## Note: This is an unofficial image of telegram-bot-api
