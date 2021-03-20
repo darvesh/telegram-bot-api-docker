@@ -28,4 +28,4 @@ By default the Telegram Bot API server is launched on the port 8081, which can b
 
 ## Note: 
 * This is an unofficial image of telegram-bot-api
-* Only supports linux 
+* Only supports linux
